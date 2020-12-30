@@ -18,6 +18,7 @@ def merge_data():
 	# keep only necessary fields
 	player_df = player_df[['position', 'player_name', 'player_cost', 'total_points']]
 
+	# drop na's as this will effect the optimiser
 	player_df = player_df.dropna()
 
 	return(player_df)
